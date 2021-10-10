@@ -1,6 +1,6 @@
 {
   "name": "simple-tesla-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple Tesla API",
   "main": "tesla-api.js",
   "scripts": {

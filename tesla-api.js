@@ -1,5 +1,4 @@
 
-var querystring  = require('querystring');
 var Path         = require('path');
 var URL          = require('url');
 
