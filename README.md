@@ -10,4 +10,4 @@ get()
 post()
 command()
 
-No dependecys. It handles wakeup.
+No dependecies. It handles wakeup.

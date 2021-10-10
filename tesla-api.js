@@ -207,9 +207,9 @@ module.exports = class TeslaAPI {
 
 	async connect() {
 
-		var reply = await this.api.request('GET', 'vehicles');
-		var vehicles = reply.body.response;
-		
+		var request = await this.api.request('GET', 'vehicles');
+		var vehicles = request.body.response;
+
 		var vehicle = vehicles.find((item) => {
 			return item.vin == this.vin;
 		});

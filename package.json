@@ -1,10 +1,10 @@
 {
   "name": "simple-tesla-api",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Simple Tesla API",
   "main": "tesla-api.js",
   "scripts": {
-    "goto-npm": "open https://www.npmjs.com/package/yow",
+    "goto-npm": "open https://www.npmjs.com/package/simple-tesla-api",
     "git-commit": "git add -A && git commit -m '-' && git push",
     "npm-publish": "npm publish"
   },
@@ -18,6 +18,8 @@
     "url": "https://github.com/meg768/simple-tesla-api/issues"
   },
   "homepage": "https://github.com/meg768/simple-tesla-api#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "dotenv": "^10.0.0"
   }
 }
