@@ -55,7 +55,9 @@ async function getVehicleData() {
 getVehicleData();
 ````
 
-- **connect()**          - Just as you would expect. Uses the npm module 'sprintf-js'.
-- **get(args)**         - Just as you would expect. Uses the npm module 'sprintf-js'.
-- **post()**      - Call a function just once and return the same result.
+## Methods
+
+- **connect()**          - Connects to your Tesla. Not required.
+- **get()**         - Executes a GET request.
+- **post()**      - Executes a POST request.
 
