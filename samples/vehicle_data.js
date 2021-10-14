@@ -1,4 +1,4 @@
-async function doorLock() {	
+async function getVehicleData() {	
 	require('dotenv').config();
 
 	var TeslaAPI = require('../tesla-api.js');
@@ -9,7 +9,7 @@ async function doorLock() {
 	};
 
 	var tapi = new TeslaAPI(options);
-	console.log(await tapi.post('command/door_lock'));
+	console.log(await tapi.get('vehicle_data'));
 }
 
-doorLock();
+getVehicleData();
