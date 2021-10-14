@@ -1,11 +1,13 @@
-# Yow
+# Simple Tesla API
+
+This is a minimal API for Tesla vehicles. The actual API is not included here.
 
 Toolbox for Node. Contains stuff you only wished was there in the first place.
 
 ## Installation
 
 ````bash
-npm install yow --save
+npm install simple-tesla-api --save
 ````
 
 ## Methods
