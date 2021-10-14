@@ -5,13 +5,17 @@ require('dotenv').config();
 async function main() {
 	
 	var options = {
-		token: process.env.TESLA_API_TOKEN,
-		vin: process.env.TESLA_API_VIN
+		refreshToken: process.env.TESLA_API_REFRESH_TOKEN,
+		vin: process.env.TESLA_API_VIN,
+		debug:true
 	};
 
 	var tapi = new TeslaAPI(options);
 
-	var data = await tapi.command('door_lock');
+	var data = await tapi.post('command/door_lock');
+	var data = await tapi.post('command/door_lock');
+
+//	var data = await tapi.get('vehicle_data');
 	console.log(data);
 }
 
