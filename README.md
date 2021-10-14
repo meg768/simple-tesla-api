@@ -17,10 +17,9 @@ npm install simple-tesla-api --save
 ### Lock door
 
 ````javascript
+async function doorLock() {	
+	require('dotenv').config();
 
-require('dotenv').config();
-
-async function main() {	
 	var TeslaAPI = require('../tesla-api.js');
 
 	var options = {
@@ -32,7 +31,7 @@ async function main() {
 	console.log(await tapi.post('command/door_lock'));
 }
 
-main();
+doorLock();
 ````
 
 ````javascript
