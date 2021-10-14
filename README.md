@@ -16,16 +16,27 @@ npm install simple-tesla-api --save
 ### General Purpose
 
 ````javascript
-var sprintf = require('yow/sprintf');
-var vsprintf = require('yow/vsprintf');
-var once = require('yow/once');
-var merge = require('yow/merge');
+
+require('dotenv').config();
+
+async function main() {	
+	var TeslaAPI = require('../tesla-api.js');
+
+	var options = {
+		token: process.env.TESLA_API_REFRESH_TOKEN,
+		vin: process.env.TESLA_API_VIN
+	};
+
+	var tapi = new TeslaAPI(options);
+	console.log(await tapi.post('command/door_lock'));
+}
+
+main();
 ````
 
-- **connect(args)**          - Just as you would expect. Uses the npm module 'sprintf-js'.
+- **connect()**          - Just as you would expect. Uses the npm module 'sprintf-js'.
 - **get(args)**         - Just as you would expect. Uses the npm module 'sprintf-js'.
 - **post(fn, context)**      - Call a function just once and return the same result.
-- **merge({}, objects...)**  - Like Object.assign() but does a deep merge.
 
 
 ### File System
